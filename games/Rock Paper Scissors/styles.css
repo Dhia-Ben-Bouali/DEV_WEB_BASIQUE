@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+* {
+   
+    font-family: 'Bungee', cursive;
+  
+    
+
+}
+
+
+body {
+background-color: lightgray;
+background: url('RPS.webp');
+background-position: center;
+background-attachment: fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.4);
+}
+
+.results {
+  margin-top: 4rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: 3rem;
+  font-size: 3rem;
+  color: rgb(213, 56, 20);
+}
+
+.result-selection {
+  opacity: .5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}
